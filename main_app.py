@@ -257,6 +257,8 @@ if "mood_memory" not in st.session_state:
             st.session_state.mood_memory = json.load(f)
     else:
         st.session_state.mood_memory = []
+if "mood_memory" not in st.session_state:
+    st.session_state.mood_memory = []
 
 # --- Fallback Keywords ---
 fallback_keywords = {
@@ -470,23 +472,84 @@ with tab1:
                 elif category == "romantic gifts":
                     return "romantic gifts for couples" if gender != "Prefer not to say" else category
                 return category
-
+             
             adjusted_category = adjust_category(mapped_category, age, interest, gender)
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            st.session_state.mood_memory.append({"timestamp": timestamp, "mood": mood, "category": mapped_category, "adjusted_category": adjusted_category, "interest": interest, "age": age, "gender": gender})
-
+            st.session_state.mood_memory.append({
+                "timestamp": timestamp,
+                "mood": mood,
+                "category": mapped_category,
+                "adjusted_category": adjusted_category,
+                "interest": interest,
+                "age": age,
+                "gender": gender
+            })
+            
+            timestamp = datetime.now()
             try:
                 conn = get_db_connection()
                 cursor = conn.cursor()
-                cursor.execute("""
-                INSERT INTO mood_history (user_id, timestamp, mood, category, adjusted_category, interest, age, gender)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                """, ("user_001", timestamp, mood, mapped_category, adjusted_category, interest, age, gender))
+                insert_query = """
+                INSERT INTO mood_history (
+                user_id, timestamp, mood, category, adjusted_category, interest, age, gender)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s) """
+                values = (
+                    "user_001",         
+                    timestamp,          
+                    mood,
+                    mapped_category,
+                    adjusted_category,
+                    interest,
+                    age,
+                    gender
+                )
+                cursor.execute(insert_query, values)
                 conn.commit()
                 cursor.close()
                 conn.close()
             except Exception as e:
-                st.error(f"❌ Failed to save to database: {e}")
+                st.error(f"❌ Failed to save to database: {e}") 
+            
+            with st.expander("🧠 View Your Mood History"):
+                if st.session_state.mood_memory:
+                    for record in reversed(st.session_state.mood_memory[-5:]):
+                        st.markdown(f"""
+                                    - 🕓 `{record['timestamp']}`
+                                    - Mood: **{record['mood'].capitalize()}**
+                                    - Adjusted Category: `{record['adjusted_category']}`
+                                    - Age: {record['age']} | Gender: {record['gender']} | Interest: {record['interest']}
+                                    ---
+                                """)
+                else:
+                    st.write("No mood history yet.")
+            
+            with st.expander("📈 Mood Timeline Tracker"):
+                mood_rows = load_mood_history()
+                if mood_rows:
+                    mood_df = pd.DataFrame(mood_rows)
+                    mood_df["timestamp"] = pd.to_datetime(mood_df["timestamp"])
+                    filter_option = st.radio("Filter by:", ["All time", "Last 7 days", "Last 30 days"], horizontal=True)
+                    now = datetime.now()
+                    
+                    if filter_option == "Last 7 days":
+                        mood_df = mood_df[mood_df["timestamp"] >= now - timedelta(days=7)]
+                    elif filter_option == "Last 30 days":
+                        mood_df = mood_df[mood_df["timestamp"] >= now - timedelta(days=30)]
+                    if not mood_df.empty:
+                        fig = px.line(
+                            mood_df,
+                            x="timestamp",
+                            y="mood",
+                            title=f"Mood Tracker ({filter_option})",
+                            markers=True,
+                            labels={"timestamp": "Date/Time", "mood": "Mood"},
+                            color_discrete_sequence=["#36a2eb"]
+                        )
+                        st.plotly_chart(fig, use_container_width=True)
+                    else:
+                        st.info("No mood data found for selected range.")
+                else:
+                    st.info("No mood data available yet.")
 
             st.success(f"**Detected Mood:** {mood.capitalize()} (confidence: {confidence:.2f})")
             st.caption(f"🎯 Mapped from mood → category: `{mapped_category}` → Final adjusted: `{adjusted_category}`")

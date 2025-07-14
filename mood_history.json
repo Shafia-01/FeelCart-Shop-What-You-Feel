@@ -160,5 +160,104 @@
         "interest": "Fitness & Wellness",
         "age": 20,
         "gender": "Male"
+    },
+    {
+        "timestamp": "2025-07-14 18:35:09",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "Technology",
+        "age": 20,
+        "gender": "Female"
+    },
+    {
+        "timestamp": "2025-07-14 18:43:18",
+        "mood": "sadness",
+        "category": "books",
+        "adjusted_category": "inspirational books",
+        "interest": "General",
+        "age": 25,
+        "gender": "Prefer not to say"
+    },
+    {
+        "timestamp": "2025-07-14 18:43:38",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "Fashion",
+        "age": 20,
+        "gender": "Female"
+    },
+    {
+        "timestamp": "2025-07-14 19:51:24",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "General",
+        "age": 25,
+        "gender": "Prefer not to say"
+    },
+    {
+        "timestamp": "2025-07-14 20:04:53",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "General",
+        "age": 25,
+        "gender": "Prefer not to say"
+    },
+    {
+        "timestamp": "2025-07-14 20:14:09",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "General",
+        "age": 25,
+        "gender": "Prefer not to say"
+    },
+    {
+        "timestamp": "2025-07-14 20:16:02",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "General",
+        "age": 25,
+        "gender": "Prefer not to say"
+    },
+    {
+        "timestamp": "2025-07-14 20:16:27",
+        "mood": "surprise",
+        "category": "gifts",
+        "adjusted_category": "gifts for technology",
+        "interest": "Technology",
+        "age": 20,
+        "gender": "Male"
+    },
+    {
+        "timestamp": "2025-07-14 20:17:13",
+        "mood": "surprise",
+        "category": "gifts",
+        "adjusted_category": "gifts for technology",
+        "interest": "Technology",
+        "age": 20,
+        "gender": "Male"
+    },
+    {
+        "timestamp": "2025-07-14 20:19:27",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "General",
+        "age": 20,
+        "gender": "Female"
+    },
+    {
+        "timestamp": "2025-07-14 20:19:43",
+        "mood": "joy",
+        "category": "toys",
+        "adjusted_category": "collectibles or hobby kits for adults",
+        "interest": "Fashion",
+        "age": 20,
+        "gender": "Female"
     }
 ]
