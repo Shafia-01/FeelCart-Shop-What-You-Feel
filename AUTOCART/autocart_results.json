@@ -1,0 +1,278 @@
+{
+    "user_1": [
+        {
+            "item": "milk",
+            "suggested": {
+                "title": "Horizon Organic DHA Omega-3 Whole Milk, DHA Whole, 64 fl oz Carton",
+                "link": "https://www.walmart.com/search?q=milk"
+            },
+            "category": "dairy"
+        },
+        {
+            "item": "bread",
+            "suggested": {
+                "title": "Sister Schubert's Dinner Yeast Rolls 13 Oz",
+                "link": "https://www.walmart.com/search?q=bread"
+            },
+            "category": "bakery"
+        },
+        {
+            "item": "eggs",
+            "suggested": {
+                "title": "Happy Egg Co Organic Free-Range Large Brown Eggs, 18 Count",
+                "link": "https://www.walmart.com/search?q=eggs"
+            },
+            "category": "others"
+        },
+        {
+            "item": "water",
+            "suggested": {
+                "title": "Pure Life Purified Water, 16.9 fl oz, 35-pack Plastic Bottles",
+                "link": "https://www.walmart.com/search?q=water"
+            },
+            "category": "others"
+        }
+    ],
+    "user_2": [
+        {
+            "item": "coffee",
+            "suggested": {
+                "title": "Folgers Classic Roast Ground Coffee, Medium Roast, 9.6 oz Canister",
+                "link": "https://www.walmart.com/search?q=coffee"
+            },
+            "category": "beverages"
+        },
+        {
+            "item": "toilet paper",
+            "suggested": {
+                "title": "Cottonelle Ultra Comfort Toilet Paper, Soft Toilet Tissue, 12 Mega Rolls",
+                "link": "https://www.walmart.com/search?q=toilet+paper"
+            },
+            "category": "cleaning"
+        },
+        {
+            "item": "detergent",
+            "suggested": {
+                "title": "Gain Liquid Laundry Detergent, Moonlight Breeze Scent, 154 fl oz, 107 Loads",
+                "link": "https://www.walmart.com/search?q=detergent"
+            },
+            "category": "cleaning"
+        },
+        {
+            "item": "snacks",
+            "suggested": {
+                "title": "Nabisco Classic Mix Variety Pack, OREO, CHIPS AHOY!, Nutter Butter, RITZ Bits Cheese, 20 Snack Packs",
+                "link": "https://www.walmart.com/search?q=snacks"
+            },
+            "category": "others"
+        }
+    ],
+    "user_3": [
+        {
+            "item": "banana",
+            "suggested": {
+                "title": "Fresh Banana, Each",
+                "link": "https://www.walmart.com/search?q=banana"
+            },
+            "category": "fruits"
+        },
+        {
+            "item": "milk",
+            "suggested": {
+                "title": "Horizon Organic DHA Omega-3 Whole Milk, DHA Whole, 64 fl oz Carton",
+                "link": "https://www.walmart.com/search?q=milk"
+            },
+            "category": "dairy"
+        },
+        {
+            "item": "bread",
+            "suggested": {
+                "title": "Sister Schubert's Dinner Yeast Rolls 13 Oz",
+                "link": "https://www.walmart.com/search?q=bread"
+            },
+            "category": "bakery"
+        }
+    ],
+    "user_4": [
+        {
+            "item": "shampoo",
+            "suggested": {
+                "title": "Tresemme Hydrating Shampoo Rich Moisture for Dry Hair formulated with Pro Style Technology, 28 oz",
+                "link": "https://www.walmart.com/search?q=shampoo"
+            },
+            "category": "others"
+        },
+        {
+            "item": "soap",
+            "suggested": {
+                "title": "Dove Beauty Bar Women's Bath Soap Sensitive Unscented Hypoallergenic Sensitive Skin, 3.75 oz 8 Bars",
+                "link": "https://www.walmart.com/search?q=soap"
+            },
+            "category": "others"
+        },
+        {
+            "item": "toilet paper",
+            "suggested": {
+                "title": "Cottonelle Ultra Comfort Toilet Paper, Soft Toilet Tissue, 12 Mega Rolls",
+                "link": "https://www.walmart.com/search?q=toilet+paper"
+            },
+            "category": "cleaning"
+        }
+    ],
+    "user_5": [
+        {
+            "item": "cheese",
+            "suggested": {
+                "title": "Kraft Singles American Cheese Slices, 24 Ct Pk, Refrigerated",
+                "link": "https://www.walmart.com/search?q=cheese"
+            },
+            "category": "dairy"
+        },
+        {
+            "item": "snacks",
+            "suggested": {
+                "title": "Nabisco Classic Mix Variety Pack, OREO, CHIPS AHOY!, Nutter Butter, RITZ Bits Cheese, 20 Snack Packs",
+                "link": "https://www.walmart.com/search?q=snacks"
+            },
+            "category": "others"
+        },
+        {
+            "item": "banana",
+            "suggested": {
+                "title": "Fresh Banana, Each",
+                "link": "https://www.walmart.com/search?q=banana"
+            },
+            "category": "fruits"
+        }
+    ],
+    "user_6": [
+        {
+            "item": "coffee",
+            "suggested": {
+                "title": "Folgers Classic Roast Ground Coffee, Medium Roast, 9.6 oz Canister",
+                "link": "https://www.walmart.com/search?q=coffee"
+            },
+            "category": "beverages"
+        },
+        {
+            "item": "milk",
+            "suggested": {
+                "title": "Horizon Organic DHA Omega-3 Whole Milk, DHA Whole, 64 fl oz Carton",
+                "link": "https://www.walmart.com/search?q=milk"
+            },
+            "category": "dairy"
+        },
+        {
+            "item": "bread",
+            "suggested": {
+                "title": "Sister Schubert's Dinner Yeast Rolls 13 Oz",
+                "link": "https://www.walmart.com/search?q=bread"
+            },
+            "category": "bakery"
+        }
+    ],
+    "user_7": [
+        {
+            "item": "water",
+            "suggested": {
+                "title": "Pure Life Purified Water, 16.9 fl oz, 35-pack Plastic Bottles",
+                "link": "https://www.walmart.com/search?q=water"
+            },
+            "category": "others"
+        },
+        {
+            "item": "eggs",
+            "suggested": {
+                "title": "Happy Egg Co Organic Free-Range Large Brown Eggs, 18 Count",
+                "link": "https://www.walmart.com/search?q=eggs"
+            },
+            "category": "others"
+        },
+        {
+            "item": "soap",
+            "suggested": {
+                "title": "Dove Beauty Bar Women's Bath Soap Sensitive Unscented Hypoallergenic Sensitive Skin, 3.75 oz 8 Bars",
+                "link": "https://www.walmart.com/search?q=soap"
+            },
+            "category": "others"
+        }
+    ],
+    "user_8": [
+        {
+            "item": "snacks",
+            "suggested": {
+                "title": "Nabisco Classic Mix Variety Pack, OREO, CHIPS AHOY!, Nutter Butter, RITZ Bits Cheese, 20 Snack Packs",
+                "link": "https://www.walmart.com/search?q=snacks"
+            },
+            "category": "others"
+        },
+        {
+            "item": "banana",
+            "suggested": {
+                "title": "Fresh Banana, Each",
+                "link": "https://www.walmart.com/search?q=banana"
+            },
+            "category": "fruits"
+        },
+        {
+            "item": "toilet paper",
+            "suggested": {
+                "title": "Cottonelle Ultra Comfort Toilet Paper, Soft Toilet Tissue, 12 Mega Rolls",
+                "link": "https://www.walmart.com/search?q=toilet+paper"
+            },
+            "category": "cleaning"
+        }
+    ],
+    "user_9": [
+        {
+            "item": "coffee",
+            "suggested": {
+                "title": "Folgers Classic Roast Ground Coffee, Medium Roast, 9.6 oz Canister",
+                "link": "https://www.walmart.com/search?q=coffee"
+            },
+            "category": "beverages"
+        },
+        {
+            "item": "milk",
+            "suggested": {
+                "title": "Horizon Organic DHA Omega-3 Whole Milk, DHA Whole, 64 fl oz Carton",
+                "link": "https://www.walmart.com/search?q=milk"
+            },
+            "category": "dairy"
+        },
+        {
+            "item": "detergent",
+            "suggested": {
+                "title": "Gain Liquid Laundry Detergent, Moonlight Breeze Scent, 154 fl oz, 107 Loads",
+                "link": "https://www.walmart.com/search?q=detergent"
+            },
+            "category": "cleaning"
+        }
+    ],
+    "user_10": [
+        {
+            "item": "bread",
+            "suggested": {
+                "title": "Sister Schubert's Dinner Yeast Rolls 13 Oz",
+                "link": "https://www.walmart.com/search?q=bread"
+            },
+            "category": "bakery"
+        },
+        {
+            "item": "banana",
+            "suggested": {
+                "title": "Fresh Banana, Each",
+                "link": "https://www.walmart.com/search?q=banana"
+            },
+            "category": "fruits"
+        },
+        {
+            "item": "cheese",
+            "suggested": {
+                "title": "Kraft Singles American Cheese Slices, 24 Ct Pk, Refrigerated",
+                "link": "https://www.walmart.com/search?q=cheese"
+            },
+            "category": "dairy"
+        }
+    ]
+}
