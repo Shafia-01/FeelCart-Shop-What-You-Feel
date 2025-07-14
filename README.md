@@ -68,11 +68,6 @@ FeelCart-ShopWhatYouFeel/
 
 ---
 
-## 📸 Screenshots (Add Yours)
-
-> *(Add screenshots of MoodCart, AutoCart output, and mood timeline graphs here)*
-
----
 
 ## ⚙️ Installation & Usage
 
