@@ -77,7 +77,7 @@ fallback_keywords = {
     },
 }
 
-SERPAPI_KEY = os.getenv("SERPAPI_KEY") or "5acd29613909b7e659da2c4e9159fab088f6c59af927c9e9d3895e35b786b862"
+SERPAPI_KEY = os.getenv("SERPAPI_KEY")
 
 def build_search_term(category, interest):
     stopwords = {"or", "for", "and", "of", "kits", "adults", "teens", "kids", "collectibles", "products", "items"}

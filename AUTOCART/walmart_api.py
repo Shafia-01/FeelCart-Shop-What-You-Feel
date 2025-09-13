@@ -1,6 +1,9 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = "5acd29613909b7e659da2c4e9159fab088f6c59af927c9e9d3895e35b786b862"  # Set this in your environment
+load_dotenv()  # Loads variables from a .env file
+API_KEY = os.getenv("SERPAPI_KEY")
 BASE_URL = "https://serpapi.com/search.json"
 
 def fetch_trending_products(query, num_results=5):
